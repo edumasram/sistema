@@ -1,4 +1,9 @@
 Sistema::Application.routes.draw do
+  resources :fornecedors, :path => 'fornecedores'
+
+  resources :marcas
+
+
   resources :produtos
 
 

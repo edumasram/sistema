@@ -1,0 +1,25 @@
+<h1>Fornecedores</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fornecedors.each do |fornecedor| %>
+  <tr>
+    <td><%= fornecedor.nome %></td>
+    <td><%= fornecedor.telefone %></td>
+    <td><%= link_to 'Exibir', fornecedor %></td>
+    <td><%= link_to 'Editar', edit_fornecedor_path(fornecedor) %></td>
+    <td><%= link_to 'Excluir', fornecedor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Fornecedor', new_fornecedor_path %>

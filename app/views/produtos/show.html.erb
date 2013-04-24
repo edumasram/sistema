@@ -20,6 +20,11 @@
   <%= @produto.cod_fornecedor %>
 </p>
 
+<p>
+  <b>Marca:</b>
+  <%= @produto.marca.nome %>
+</p>
+
 
 <%= link_to 'Edit', edit_produto_path(@produto) %> |
 <%= link_to 'Back', produtos_path %>

@@ -24,6 +24,9 @@ class ProdutosController < ApplicationController
   # GET /produtos/new
   # GET /produtos/new.json
   def new
+    
+# Edu comentado    @marca = Marca.find_by_produto_id(current_produto.id)
+
     @produto = Produto.new
 
     respond_to do |format|

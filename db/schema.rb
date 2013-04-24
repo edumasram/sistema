@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404173432) do
+ActiveRecord::Schema.define(:version => 20130422214821) do
+
+  create_table "fornecedors", :force => true do |t|
+    t.string   "nome"
+    t.string   "telefone"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "marcas", :force => true do |t|
+    t.string   "nome"
+    t.text     "descricao"
+    t.integer  "fornecedor_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "marcas", ["fornecedor_id"], :name => "index_marcas_on_fornecedor_id"
 
   create_table "produtos", :force => true do |t|
     t.string   "nome"
@@ -20,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20130404173432) do
     t.string   "cod_fornecedor"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.integer  "marca_id"
   end
 
 end
