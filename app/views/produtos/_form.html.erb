@@ -27,10 +27,14 @@
     <%= f.label :cod_fornecedor %><br />
     <%= f.text_field :cod_fornecedor %>
   </div>
+ 
+
+  </div>
   <div class="field">
     <%= f.label :cod_fornecedor %><br />
-    <%= f.text_field :marca_id %>
+    <%= f.collection_select :marca_id, Marca.all, :id, :nome %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
