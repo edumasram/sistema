@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  sku: MyString
+  estoque: 1
+  cod_fornecedor: MyString
+
+two:
+  nome: MyString
+  sku: MyString
+  estoque: 1
+  cod_fornecedor: MyString
