@@ -6,3 +6,15 @@ https://devcenter.heroku.com/articles/keys#adding_keys_to_heroku
 
 Renaming Apps from the CLI
 https://devcenter.heroku.com/articles/renaming-apps
+
+Heroku deployment failed because of sqlite3 gem error
+http://stackoverflow.com/questions/13083399/heroku-deployment-failed-because-of-sqlite3-gem-error
+
+http://stackoverflow.com/questions/4954969/rails-3-migrations-adding-reference-column
+
+http://stackoverflow.com/questions/5240181/rails-3-route-alias
+
+http://stackoverflow.com/questions/4965212/rails-updating-a-record
+
+Brasil 
+https://github.com/tapajos/brazilian-rails
