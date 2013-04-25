@@ -1,1 +1,8 @@
 Olá
+
+
+Managing Your SSH Keys
+https://devcenter.heroku.com/articles/keys#adding_keys_to_heroku
+
+Renaming Apps from the CLI
+https://devcenter.heroku.com/articles/renaming-apps
