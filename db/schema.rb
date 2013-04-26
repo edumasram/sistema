@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422214821) do
+ActiveRecord::Schema.define(:version => 20130426183339) do
+
+  create_table "custo_produtos", :force => true do |t|
+    t.decimal  "custo",      :precision => 8, :scale => 2
+    t.integer  "produto_id"
+    t.datetime "data"
+    t.datetime "created_at",                               :null => false
+    t.datetime "updated_at",                               :null => false
+  end
 
   create_table "fornecedors", :force => true do |t|
     t.string   "nome"
