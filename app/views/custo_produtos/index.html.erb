@@ -12,8 +12,8 @@
 
 <% @custo_produtos.each do |custo_produto| %>
   <tr>
-    <td><%= custo_produto.custo %></td>
-    <td><%= custo_produto.produto_id %></td>
+    <td><%= custo_produto.custo.real %></td>
+    <td><%= custo_produto.produto.nome %></td>
     <td><%= custo_produto.data %></td>
     <td><%= link_to 'Show', custo_produto %></td>
     <td><%= link_to 'Edit', edit_custo_produto_path(custo_produto) %></td>

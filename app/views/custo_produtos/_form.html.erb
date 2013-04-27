@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :produto_id %><br />
-    <%= f.number_field :produto_id %>
+    <%= f.collection_select :produto_id, Produto.all, :id, :nome %>
   </div>
   <div class="field">
     <%= f.label :data %><br />
