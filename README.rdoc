@@ -19,4 +19,5 @@ http://stackoverflow.com/questions/4965212/rails-updating-a-record
 Brasil 
 https://github.com/tapajos/brazilian-rails
 
-ok
+Bootstrap (sem Less com JS)
+https://github.com/seyhunak/twitter-bootstrap-rails
