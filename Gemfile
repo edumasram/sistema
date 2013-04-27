@@ -2,10 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'brazilian-rails'
-gem 'therubyracer'  # If using Ruby
-gem 'therubyrhino'  # If using JRuby
-gem 'jquery-rails'  # If using Bootstrap's JS plugins.
-gem 'less-rails-bootstrap'
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
   gem 'sqlite3'
@@ -15,8 +13,6 @@ group :production do
   gem 'pg'
 end
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,6 +26,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
