@@ -1,0 +1,29 @@
+<h1>Listing fornecedor_custos</h1>
+
+<table>
+  <tr>
+    <th>Produto</th>
+    <th>Preco</th>
+    <th>Data</th>
+    <th>Obs</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fornecedor_custos.each do |fornecedor_custo| %>
+  <tr>
+    <td><%= fornecedor_custo.produto_id %></td>
+    <td><%= fornecedor_custo.preco %></td>
+    <td><%= fornecedor_custo.data %></td>
+    <td><%= fornecedor_custo.obs %></td>
+    <td><%= link_to 'Show', fornecedor_custo %></td>
+    <td><%= link_to 'Edit', edit_fornecedor_custo_path(fornecedor_custo) %></td>
+    <td><%= link_to 'Destroy', fornecedor_custo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fornecedor custo', new_fornecedor_custo_path %>

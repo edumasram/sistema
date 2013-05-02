@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Produto:</b>
+  <%= @fornecedor_custo.produto_id %>
+</p>
+
+<p>
+  <b>Preco:</b>
+  <%= @fornecedor_custo.preco %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @fornecedor_custo.data %>
+</p>
+
+<p>
+  <b>Obs:</b>
+  <%= @fornecedor_custo.obs %>
+</p>
+
+
+<%= link_to 'Edit', edit_fornecedor_custo_path(@fornecedor_custo) %> |
+<%= link_to 'Back', fornecedor_custos_path %>

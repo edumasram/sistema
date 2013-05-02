@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422214821) do
+ActiveRecord::Schema.define(:version => 20130501054146) do
+
+  create_table "fornecedor_custos", :force => true do |t|
+    t.integer  "produto_id"
+    t.integer  "fornecedor_id"
+    t.decimal  "preco",         :precision => 8, :scale => 2
+    t.datetime "data"
+    t.text     "obs"
+    t.datetime "created_at",                                  :null => false
+    t.datetime "updated_at",                                  :null => false
+  end
 
   create_table "fornecedors", :force => true do |t|
     t.string   "nome"

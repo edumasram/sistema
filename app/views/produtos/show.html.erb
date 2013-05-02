@@ -1,6 +1,6 @@
 <%- model_class = Produto -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+  <h1><%= @produto.nome %></h1>
 </div>
 
 <dl class="dl-horizontal">
@@ -15,6 +15,14 @@
   <dt><strong><%= model_class.human_attribute_name(:marca_id) %>:</strong></dt>
   <dd><%= @produto.marca.nome %></dd>
 </dl>
+
+<% @produto.fornecedor_custos.all.each do |custo| %>
+      <tr>
+        <td>R$ <%= custo.preco.real %></td>
+        <td><%= custo.data %></td>
+      </tr><br>
+    <% end %>
+
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),

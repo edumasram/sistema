@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  produto_id: 1
+  preco: 9.99
+  data: 2013-05-01 03:02:27
+  obs: MyText
+
+two:
+  produto_id: 1
+  preco: 9.99
+  data: 2013-05-01 03:02:27
+  obs: MyText
