@@ -21,3 +21,6 @@ https://github.com/tapajos/brazilian-rails
 
 Bootstrap (sem Less com JS)
 https://github.com/seyhunak/twitter-bootstrap-rails
+
+Devise
+http://www.maujor.com/railsgirlsguide/devise.php
