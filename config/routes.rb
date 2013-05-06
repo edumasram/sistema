@@ -1,14 +1,14 @@
 Sistema::Application.routes.draw do
   devise_for :users
 
-  resources :fornecedor_custos
+  resources :fornecedor_custos, :path => "custos"
 
 
   resources :fornecedors, :path => 'fornecedores'
 
   resources :marcas
 
-
+  resources :relatorios
   resources :produtos
 
 
